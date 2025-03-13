@@ -24,12 +24,12 @@ public class BorrowRecordController {
 
     @PostMapping
     public BorrowRecord borrowBook(@RequestBody BorrowRecord borrowRecord) {
-        String bookUrl = "http://localhost:8080/books/" + borrowRecord.getBookId();
+        String bookUrl = "http://book-service:8080/books/" + borrowRecord.getBookId();
         ResponseEntity<Map> bookResponse = restTemplate.getForEntity(bookUrl, Map.class);
         if (bookResponse.getBody() == null || bookResponse.getBody().get("id") == null)
             throw new RuntimeException("Book not found!");
 
-        String userUrl = "http://localhost:8081/users/" + borrowRecord.getUserId();
+        String userUrl = "http://user-service:8081/users/" + borrowRecord.getUserId();
         ResponseEntity<Map> userResponse = restTemplate.getForEntity(userUrl, Map.class);
         if (userResponse.getBody() == null || userResponse.getBody().get("id") == null)
             throw new RuntimeException("User not found!");

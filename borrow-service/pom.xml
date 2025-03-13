@@ -10,7 +10,6 @@
     </parent>
     <groupId>com.spring</groupId>
     <artifactId>borrow-service</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
     <name>borrow-service</name>
     <description>borrow-service</description>
     <url/>
