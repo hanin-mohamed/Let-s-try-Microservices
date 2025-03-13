@@ -10,7 +10,6 @@
     </parent>
     <groupId>com.spring</groupId>
     <artifactId>book-service</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
     <name>book-service</name>
     <description>book-service</description>
     <url/>
