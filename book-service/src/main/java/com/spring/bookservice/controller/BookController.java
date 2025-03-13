@@ -1,6 +1,6 @@
 package com.spring.bookservice.controller;
 
-import com.spring.bookservice.entity.BookEntity;
+import com.spring.bookservice.entity.Book;
 import com.spring.bookservice.repository.BookRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -14,17 +14,17 @@ public class BookController {
     @Autowired
     private BookRepository bookRepository;
     @GetMapping("/{id}")
-    public BookEntity getBook(@PathVariable int id) {
+    public Book getBook(@PathVariable int id) {
         return bookRepository.findById(id).orElse(null);
     }
 
     @GetMapping
-    public List<BookEntity> getBooks() {
+    public List<Book> getBooks() {
         return bookRepository.findAll();
     }
 
     @PostMapping
-    public BookEntity addBook(@RequestBody BookEntity book) {
+    public Book addBook(@RequestBody Book book) {
         return bookRepository.save(book);
     }
 }

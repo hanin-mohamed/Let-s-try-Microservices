@@ -6,7 +6,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
 @Entity
-public class BookEntity {
+public class Book {
 
 
     @Id
@@ -17,10 +17,10 @@ public class BookEntity {
     private String author;
 
 
-    public BookEntity() {
+    public Book() {
     }
 
-    public BookEntity(String title, String author) {
+    public Book(String title, String author) {
         this.title = title;
         this.author = author;
     }
