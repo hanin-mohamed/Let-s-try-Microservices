@@ -1,4 +1,4 @@
-# Microservices Project: Simple Library Management System 
+#  Simple Microservices Library Management System 
 
 ## Project Description
 In this project, I aimed to apply the basics of Microservices in a simplified way to understand how independent services work together. The result is a simple **Library Management System** built using a **Microservices Architecture**, consisting of three independent services: **Book Service**, **User Service**, and **Borrowing Service**. Each service runs in its own container and connects to a dedicated database, demonstrating the core principles of Microservices design.
