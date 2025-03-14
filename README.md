@@ -2,7 +2,6 @@
 
 ## Project Description
 In this project, I aimed to apply the basics of Microservices in a simplified way to understand how independent services work together. The result is a simple **Library Management System** built using a **Microservices Architecture**, consisting of three independent services: **Book Service**, **User Service**, and **Borrowing Service**. Each service runs in its own container and connects to a dedicated database, demonstrating the core principles of Microservices design.
-I built this project to learn Microservices, gaining experience with Docker and REST APIs despite connectivity challenges.
 
 ## Technologies Used
 - **Spring Boot**: For developing the microservices.
@@ -23,3 +22,17 @@ I built this project to learn Microservices, gaining experience with Docker and 
 - **Database per Service**: Separate databases for each service.
 - **Synchronous Communication**: REST-based communication.
 - **Containerization**: Docker .
+
+
+## Screenshots
+
+| Description                  | Screenshot                                                                 |
+|------------------------------|---------------------------------------------------------------------------|
+| Running Containers           | <img src="Attachments/services&database-containers.png" width="500"/>     |
+| Add Book                     | <img src="Attachments/add-book.png" width="500"/>                         |
+| Add User                     | <img src="Attachments/add-user.png" width="500"/>                         |
+| Borrow Exist Book            | <img src="Attachments/borrow-exist-book.png" width="500"/>                |
+| Borrow Unexist Book          | <img src="Attachments/borrow-unexist-book.png" width="500"/>              |
+
+
+##  I built this project to learn Microservices, gaining experience with Docker and REST APIs despite connectivity challenges.
